@@ -74,13 +74,16 @@ func main() {
 }
 
 func Spell(w string) {
-	for _, c := range w {
+	last := len(w) - 1
+	for i, c := range w {
 		if val, ok := Alphabet[c]; ok {
 			fmt.Print(val)
 		} else {
 			fmt.Print(string(c))
 		}
-		fmt.Print(" ")
+		if i != last {
+			fmt.Print(" ")
+		}
 	}
 }
 
