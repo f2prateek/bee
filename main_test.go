@@ -18,3 +18,10 @@ func ExampleCharacters() {
 	// Mike November Oscar Papa Quebec Romeo Sierra Tango Uniform Victor Whiskey
 	// X-ray Yankee Zulu
 }
+
+func ExampleDigits() {
+	main.Spell("1234567890")
+
+	// Output:
+	// One Two Three Four Five Six Seven Eight Nine Zero
+}
