@@ -25,3 +25,10 @@ func ExampleDigits() {
 	// Output:
 	// One Two Three Four Five Six Seven Eight Nine Zero
 }
+
+func ExampleUnknown() {
+	main.Spell(", ./")
+
+	// Output:
+	// ,   . /
+}
