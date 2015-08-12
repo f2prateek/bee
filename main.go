@@ -23,7 +23,7 @@ Options:
 	Version = `1.0.0`
 )
 
-var Alphabet = map[rune]string{
+var Table = map[rune]string{
 	'a': "Alfa",
 	'b': "Bravo",
 	'c': "Charlie",
@@ -77,7 +77,7 @@ func main() {
 func Spell(w string) {
 	last := len(w) - 1
 	for i, c := range w {
-		if val, ok := Alphabet[c]; ok {
+		if val, ok := Table[c]; ok {
 			fmt.Print(val)
 		} else {
 			fmt.Print(string(c))
