@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"log"
+	"unicode"
 
 	"github.com/tj/docopt"
 )
@@ -77,6 +78,7 @@ func main() {
 func Spell(w string) {
 	last := len(w) - 1
 	for i, c := range w {
+		c = unicode.To(unicode.LowerCase, c)
 		if val, ok := Table[c]; ok {
 			fmt.Print(val)
 		} else {

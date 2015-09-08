@@ -7,9 +7,9 @@ import (
 )
 
 func ExampleCharacters() {
-	main.Spell("abcdefghijkl")
+	main.Spell("aBcdefghIjkl")
 	fmt.Println()
-	main.Spell("mnopqrstuvw")
+	main.Spell("MnopqRstuvw")
 	fmt.Println()
 	main.Spell("xyz")
 
