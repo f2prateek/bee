@@ -23,7 +23,7 @@ func ExampleDigits() {
 	main.Spell("1234567890")
 
 	// Output:
-	// One Two Three Four Five Six Seven Eight Nine Zero
+	// 1 2 3 4 5 6 7 8 9 0
 }
 
 func ExampleUnknown() {
