@@ -27,8 +27,8 @@ func ExampleDigits() {
 }
 
 func ExampleUnknown() {
-	main.Spell(", ./")
+	main.Spell(", ./\\")
 
 	// Output:
-	// ,   . /
+	// ,   . / \
 }
